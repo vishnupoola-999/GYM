@@ -238,3 +238,23 @@ window.submitAppointment = submitAppointment;
 window.toggleChat = toggleChat;
 window.handleChatKey = handleChatKey;
 window.sendChat = sendChat;
+
+/**
+ * Mobile Menu Toggle
+ */
+function toggleMobileMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    const toggle = document.querySelector('.mobile-toggle');
+    navLinks.classList.toggle('active');
+    toggle.classList.toggle('active');
+}
+
+// Close menu when clicking links
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.querySelector('.nav-links').classList.remove('active');
+        document.querySelector('.mobile-toggle').classList.remove('active');
+    });
+});
+
+window.toggleMobileMenu = toggleMobileMenu;
