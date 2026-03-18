@@ -353,6 +353,23 @@ nav.scrolled {
 
 /* --- Mobile --- */
 @media (max-width: 991px) {
+    nav { padding: 15px 0; }
+    .logo { font-size: 1.4rem; white-space: nowrap; }
+    
+    .mobile-hidden { display: none !important; }
+
+    .hero {
+        align-items: flex-start;
+        padding-top: 130px;
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 60px;
+    }
+    .hero-content {
+        padding-top: 0;
+        padding-right: 5%;
+    }
+
     .nav-links {
         position: fixed;
         right: -100%;
@@ -392,10 +409,10 @@ nav.scrolled {
     .mobile-toggle.active span:nth-child(2) { opacity: 0; }
     .mobile-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(7px, -6px); }
 
-    .hero h1 { font-size: 3rem; }
-    .hero p { font-size: 1rem; }
-    .hero-btns { flex-direction: column; width: 100%; }
-    .btn { width: 100%; padding: 15px 30px; }
+    .hero h1 { font-size: 3rem; margin-bottom: 15px; }
+    .hero p { font-size: 1rem; margin-bottom: 25px; }
+    .hero-btns { flex-direction: column; width: 100%; gap: 15px; }
+    .btn { width: 100%; padding: 15px 20px; }
     
     .services-grid {
         grid-template-columns: 1fr !important;
